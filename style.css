@@ -1,58 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 * {
 	font-family: "IBM Plex Sans", sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
-/*--header start--*/
-header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url("image/banner-bg.jpg");
-	color: white;
-	text-align: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding-top: 20px;
-}
-header h1 {
-	font-size: 4rem;
-	border-top: 1px solid orange;
-	border-bottom: 1px solid orange;
-	margin: 20px auto;
-	max-width: 50rem;
-}
-header button {
-	padding: 15px 40px;
-	background-color: rgb(190, 151, 103);
-	border: none;
-	color: white;
-	font-size: 15px;
-	font-weight: 500;
-	margin-bottom: 90px;
-	margin-top: 40px;
-	cursor: pointer;
-}
-header button:hover {
-	padding: 15px 40px;
-	background-color: rgb(169, 97, 8);
-	border: none;
-	color: white;
-	font-size: 15px;
-	font-weight: 500;
-	margin-bottom: 90px;
-	margin-top: 40px;
-	cursor: pointer;
-}
-header p {
-	font-weight: 300;
-}
+/*------ Hero Section Open ----------*/
+
+/* ----- Nav Open ------ */
+
 nav {
 	background-color: white;
 	color: black;
 	width: 80%;
 	margin: 0 auto 100px;
-	font-size: 12px;
+	font-size: 1.1rem;
+    font-weight: 500;
 }
 
 nav > ul {
@@ -60,15 +24,17 @@ nav > ul {
 	list-style: none;
 	justify-content: end;
 }
-.options {
+.dropdown {
 	display: none;
 }
 nav span {
 	transform: rotate(90deg);
 	display: inline-block;
 }
-
-.blogopt:hover .options {
+.dropdown_box {
+    position: relative;
+}
+.dropdown_box:hover .dropdown {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
@@ -76,7 +42,7 @@ nav span {
 	list-style: none;
 	padding: 10px;
 	align-items: start;
-	top: 55px;
+	top: 4rem;
 }
 nav li:hover {
 	cursor: pointer;
@@ -87,124 +53,189 @@ a {
 	color: black;
 }
 nav li {
-	padding: 10px 10px;
+	padding: 20px 10px;
 }
-/*--header end--*/
 
-/*--1st phase start--*/
-.fst_phase {
+/* ----------  Nav Close --------- */
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("img/hero_bread.jpg");
+	color: white;
 	text-align: center;
-	background-color: rgb(243, 243, 251);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 3rem;
 }
-.fst_phase h2 {
+header h1 {
+	font-size: 6.5rem;
+	border-top: 1px solid rgb(214, 189, 143);
+	border-bottom: 1px solid rgb(214, 189, 143);
+	margin: 25px auto;
+	max-width: 90rem;
+}
+header button {
+	padding: 20px 50px;
+	background-color: rgb(190, 151, 103);
+	border: none;
+	color: white;
 	font-size: 1.5rem;
 	font-weight: 500;
-	padding-top: 50px;
+	margin-bottom: 5rem;
+	margin-top: 2.3rem;
+	cursor: pointer;
+    transition: all ease 0.5s;
 }
-.fst_phase p {
-	font-size: 0.7rem;
+header button:hover {
+	background-color: rgb(169, 97, 8);
+    transform: scale(1.1);
+}
+header p {
+	font-weight: 300;
+    font-size: 1.2rem;
+}
+
+/*------------- Header Close ------------*/
+
+/*-------- Food Section Open  --------*/
+.food_section {
+	text-align: center;
+	background-color: rgb(245, 246, 253);
+}
+.food_section h2 {
+	font-size: 2.8rem;
+	font-weight: 500;
+	padding-top: 50px;
+	margin-bottom: .8rem;
+}
+.food_section p {
+	font-size: 1rem;
 	color: gray;
 	margin-bottom: 40px;
 }
-.fst_phase_items {
+.food_section_items {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 
-.fst_phase_items img {
+.food_section_items img {
 	border-radius: 50%;
 	margin-bottom: 15px;
 }
+.food_section_items h4 {
+	font-size: 2rem;
+}
 
-.fst_phase_items p {
+.food_section_items p {
 	margin-top: 15px;
 }
-.fst_phase_items > div {
+.food_section_items > div {
 	padding: 0px 30px;
 }
-.fst_phase button {
+.food_section button {
 	padding: 15px 40px;
-	background-color: rgb(190, 157, 115);
+	background-color: rgb(190, 151, 103);
 	border: none;
 	color: white;
-	font-size: 15px;
+	font-size: 1.5rem;
 	font-weight: 500;
-	margin-bottom: 90px;
-	margin-top: 40px;
+	margin-bottom: 5rem;
+	margin-top: 2.3rem;
 	cursor: pointer;
+    transition: all ease 0.5s;
 }
-/*--1st phase end--*/
+.food_section button:hover{
+	background-color: rgb(169, 97, 8);
+    transform: scale(1.1);
+}
 
-/*--2nd phase start--*/
+/*---------- Food Section Close ---------*/
 
-.nd_phase p {
-	font-size: 15px;
-	color: rgb(232, 204, 170);
+/*------------- Video Section Open -------------*/
+.video_section_box {
+	display: flex;
+	padding: 100px;
+	justify-content: center;
 }
-.nd_phase h2 {
-	font-weight: 500;
-	font-size: 2.5rem;
+.video_description p {
+	font-size: 18px;
+	color: rgb(255, 195, 122);
 }
-.nd_phase h5 {
-	font-size: 15px;
+.video_description h2 {
+	font-weight: 700;
+	font-size: 3rem;
+	max-width: 70%;
+}
+.video_description h5 {
+	font-size: 20px;
 	font-weight: 700;
 }
 
-.nd_phase h6 {
-	font-size: 15px;
+.video_description h6 {
+	font-size: 18px;
 	color: gray;
-	max-width: 400px;
+	max-width: 70%;
+	font-weight: 300;
 }
 
-.nd_phase button {
+.video_description button {
 	padding: 15px 40px;
 	background-color: black;
 	border: none;
 	color: white;
 	font-size: 15px;
-	font-weight: 500;
+	font-weight: 700;
 	cursor: pointer;
 }
-.nd_phase_parent {
-	display: flex;
-	padding: 100px;
-	justify-content: space-between;
+
+.video_description button:active {
+	background-color: rgb(118, 118, 228);
+	
 }
-.nd_phase {
+
+.video_description {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
-/*--2nd phase end--*/
+/*----------- Video Section Close --------------*/
 
-/*--3rd phase start--*/
-
-.rd_phase_grandparent {
-	text-align: center;
+/*-------------- Pricing Section Open ---------------*/
+.price_heading{
+	font-size: 3rem;
+	font-weight: 500;
 }
-.rd_phase {
+.price_description{
+	margin: 40px 0;
+}
+.pricing_section_box {
+	text-align: center;
+	margin: 0 2rem;
+}
+.pricing_box {
 	display: flex;
 	justify-content: space-around;
-	gap: 10px;
+	gap: 2rem;
 }
-.rd_phase > div {
-	border: 1px solid gray;
+.pricing_box > div {
+	border: 1px solid rgb(194, 194, 194);
 	flex: 1;
 }
 .package > p {
 	border-bottom: 1px solid rgb(189, 189, 189);
 	padding: 10px;
 	font-weight: 300;
+	font-size: 1.2rem;
 }
-.rd_phase button {
-	background-color: rgb(83, 199, 214);
+.pricing_box button {
+	background-color: rgb(7, 145, 122);
 	padding: 15px 30px;
 	border: none;
 	color: white;
-	font-size: 16px;
+	font-size: 1.2rem;
 }
-.sign_btn {
+.sign_button_box {
 	background-color: rgb(239, 239, 239);
 	width: 100%;
 	padding: 20px 0px;
@@ -213,21 +244,28 @@ nav li {
 	background-color: black;
 	color: white;
 	padding: 30px 0px;
+	font-size: 2rem;
+	font-weight: 300;
 }
 .package h5 {
 	font-weight: 300;
 	padding: 15px 0px;
+	font-size: 1rem;
 }
-.currency {
+.dollar_sign {
 	font-weight: 500;
-	font-size: 25px;
+	font-size: 2.5rem;
 }
 .price {
-	font-weight: 300;
-	font-size: 25px;
+	font-weight: 500;
+	font-size: 2.2rem;
 }
 .package h6 {
 	padding: 15px 0px 0px 0;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	align-items: center;
 }
 .package p {
 	padding: 18px 0;
@@ -235,53 +273,55 @@ nav li {
 .pro {
 	background-color: gray !important ;
 }
-.info1 {
-	margin: 10px;
-	font-size: 25px;
-	font-weight: 400;
-	text-transform: uppercase;
-}
-.info2 {
-	margin: 20px;
+
+
+/*------- Pricing Section Close -------*/
+
+/*--------------- Blog Section Open --------------*/
+
+.blog_title {
+	text-align: center;
+	padding-top: 70px;
+	font-size: 3rem;
 }
 
-/*--3rd phase end--*/
-
-/*--4th phase start --*/
-.rth_phase {
+.blog_info {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-size: 1.2rem;
+	max-width: 50%;
+	margin: 0 auto;
+}
+.blog_parent {
 	display: flex;
 	gap: 10px;
 	justify-content: center;
 	padding: 0 80px;
 	margin-bottom: 100px;
+	
 }
-.blog {
+.blog_child {
 	border: 4px solid gray;
 	padding: 5px;
+	flex: 1;
 }
-.rth_phase h2 {
-	font-size: 20px;
+.blog_parent h2 {
+	font-size: 1.8rem;
 	padding: 20px 0;
 }
 
-.rth_phase p {
+.blog_parent p {
 	color: gray;
 	padding-bottom: 20px;
 }
-.info3 {
-	text-align: center;
-	padding-top: 70px;
-	font-size: 30px;
-}
 
-.info4 {
-	padding-top: 30px;
-	padding-bottom: 50px;
-	text-align: center;
-}
-.rth_phase img {
+.blog_parent img {
 	width: 100%;
 }
+/*-------------- Footer Open---------- */
+
+
 
 footer {
 	background-color: #04091c;
@@ -290,12 +330,12 @@ footer {
 }
 
 footer h2 {
-	font-size: 1.2rem;
-	margin-bottom: 10px;
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
 }
 footer p {
-	font-size: 0.8rem;
-	margin-bottom: 10px;
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
 }
 
 footer > div {
@@ -308,7 +348,7 @@ footer > div :nth-child(1) {
 	flex: 2;
 }
 footer > div :nth-child(1) p {
-	max-width: 25rem;
+	max-width: 80%;
 }
 footer > div :nth-child(2) {
 	flex: 2;
@@ -316,7 +356,7 @@ footer > div :nth-child(2) {
 footer > div :nth-child(3) {
 	flex: 1;
 }
-.mail_box {
+.email_container {
 	display: flex;
 }
 
@@ -329,14 +369,6 @@ footer button {
 	width: 2.5rem;
 	height: 2.5rem;
 	background-color: rgb(206, 140, 59);
-	border: none;
-	color: white;
-	font-size: 20px;
-}
-footer button:hover {
-	width: 2.5rem;
-	height: 2.5rem;
-	background-color: rgb(175, 103, 21);
 	border: none;
 	color: white;
 	font-size: 20px;
